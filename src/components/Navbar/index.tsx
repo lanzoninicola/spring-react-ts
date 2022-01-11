@@ -1,4 +1,7 @@
-export function Navbar() {
+import "./styles.css";
+import { ReactComponent as GithubIcon } from "assets/images/github.svg";
+
+export default function Navbar() {
   return (
     <header>
       <nav className="container">
@@ -7,7 +10,7 @@ export function Navbar() {
           <a
             href="https://github.com/devsuperior"
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer noopener"
           >
             <div className="dsmovie-contact-container">
               <GithubIcon />
