@@ -1,3 +1,4 @@
+import "./styles.css";
 import MovieStars from "../MovieStars";
 
 export default function MovieScore() {
