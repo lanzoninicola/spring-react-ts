@@ -24,20 +24,10 @@ export default function Listing() {
     axios
       .get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=title`)
       .then((res) => {
-        console.log(res.data);
         const data = res.data as MoviePage;
         setPage(data);
       });
   }, [pageNumber]);
-
-  const movie = {
-    id: 1,
-    image:
-      "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-    title: "The Witcher",
-    count: 2,
-    score: 4.5,
-  };
 
   return (
     <>
@@ -46,8 +36,8 @@ export default function Listing() {
         <div className="row">
           {page.content.map((movie: Movie) => {
             return (
-              <div className="col-sm-6 col-lg-4 col-xl-3 mb-3">
-                <MovieCard key={movie.id} movie={movie} />;
+              <div key={movie.id} className="col-sm-6 col-lg-4 col-xl-3 mb-3">
+                <MovieCard movie={movie} />;
               </div>
             );
           })}
