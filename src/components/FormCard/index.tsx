@@ -2,7 +2,7 @@ import "./styles.css";
 
 import axios, { AxiosRequestConfig } from "axios";
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Movie } from "types/movie";
 import { BASE_URL } from "utils/requests";
 import { validateEmail } from "utils/validate";

@@ -1,6 +1,8 @@
 import "./styles.css";
-import MovieStars from "../MovieStars";
+
 import { useState } from "react";
+
+import MovieStars from "../MovieStars";
 
 type Props = {
   score: number;
