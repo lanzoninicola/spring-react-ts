@@ -1,7 +1,5 @@
 import "./styles.css";
 
-import { useState } from "react";
-
 import MovieStars from "../MovieStars";
 
 type Props = {
