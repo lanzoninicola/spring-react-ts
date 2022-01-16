@@ -8,13 +8,13 @@ export default function Navbar() {
         <div className="dsmovie-nav-content">
           <h1>DSMovie</h1>
           <a
-            href="https://github.com/devsuperior"
+            href="https://github.com/lanzoninicola"
             target="_blank"
             rel="noreferrer noopener"
           >
             <div className="dsmovie-contact-container">
               <GithubIcon />
-              <p className="dsmovie-contact-link">/devsuperior</p>
+              <p className="dsmovie-contact-link">/lanzoninicola</p>
             </div>
           </a>
         </div>
